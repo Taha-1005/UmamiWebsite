@@ -20,8 +20,8 @@ function Brands() {
     width: 100%;
     align-items: center;
     justify-content: center;
-    height: 100%;
-
+    position: absolute;
+    top: 50%;
     a {
       color: white;
       &:hover {
