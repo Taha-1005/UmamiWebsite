@@ -14,12 +14,12 @@ const AboutUsContainer = styled.div`
     color: white;
     width: 810px;
     font-size: 13px;
-    font-family: 'Avenir';
   }
 `;
 const TextContainer = styled.div`
   margin-top: 100px;
   margin-left: 60px;
+  font-family: 'Poppins';
 `;
 const FooterWraper = styled.div`
   position: absolute;

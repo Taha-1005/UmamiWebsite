@@ -20,10 +20,10 @@ function Header({
     color: white;
     display: flex;
     width: 100%;
-    /* padding-top: 5%; */
+    padding-top: 90px;
   `;
   const UmamiContainer = styled.div`
-    margin-left: 100px;
+    margin-left: 135px;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@ function Header({
     }
   `;
   const MenuContainer = styled.div`
-    margin-right: 100px;
+    margin-right: 80px;
     width: 100%;
   `;
   const Menu = styled.nav`
@@ -46,7 +46,7 @@ function Header({
     ul {
       list-style: none;
       display: flex;
-      gap: 4rem;
+      gap: 5rem;
     }
 
     li {

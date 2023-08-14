@@ -7,23 +7,31 @@ const HomePageContainer = styled.div`
   background-image: url(${bgd_desk});
   background-size: cover;
   background-repeat: no-repeat;
-  /* position: fixed;
-  top: 0;
-  left: 0; */
   width: 100vw;
   height: 100vh;
-  background-position: center;
   overflow: hidden;
 `;
 const FooterWraper = styled.div`
-  margin-left: 10px;
+  margin-left: 95px;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
+  margin-bottom: 45px;
+`;
+const TextWarpper = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 110px;
+  transform: translateY(-50%);
+  letter-spacing: 0.6em;
+  font-size: 12px;
+  font-family: 'Avenir';
+  color: white;
 `;
 function HomePage() {
   return (
     <HomePageContainer>
       <Header />
+      <TextWarpper>YOUR FIFTH SENSE OF TASTE</TextWarpper>
       <FooterWraper>
         <Footer />
       </FooterWraper>

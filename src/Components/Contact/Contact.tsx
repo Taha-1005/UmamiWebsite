@@ -5,25 +5,30 @@ import Footer from '../Footer';
 const ContactContainer = styled.div`
   background-color: black;
   width: 100vw;
-  height: 110vh;
+  height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
 `;
 const FooterWraper = styled.div`
-  margin-top: 50px;
-  margin-left: 10px;
+  margin-left: 95px;
+  margin-bottom: 50px;
+  margin-top: 40px;
 `;
 const FormContainer = styled.div`
   display: flex;
-  font-family: 'Avenir';
+  font-family: 'Poppins';
+  font-weight: bold;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
+  font-weight: 10px;
+  margin-right: 50px;
 `;
 const FormContact = styled.div`
-  margin-left: 60px;
+  margin-left: 150px;
   font-size: 16px;
   color: #bbafaf;
   margin-top: 100px;
@@ -38,10 +43,10 @@ const FormDetails = styled.div`
   input {
     background: transparent;
     border: none;
-    border-bottom: 2px solid #ccc;
+    border-bottom: 0.15em solid #ccc;
     color: white;
     height: 40.4px;
-    width: 180;
+    width: 180px;
     padding: 3px;
     padding-left: 22px;
     &:hover {
