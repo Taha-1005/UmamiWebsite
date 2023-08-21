@@ -1,0 +1,23 @@
+.homePage {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+  background-image: url('./Artboard_1.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+.homePageText {
+  position: absolute;
+  top: 50%;
+  left: 110px;
+  transform: translateY(-50%);
+  letter-spacing: 0.6em;
+  font-size: 12px;
+  color: white;
+  font-family: 'Poppins';
+}
+.footerWrapper {
+  left: 95px;
+  position: absolute;
+  bottom: 45px;
+}

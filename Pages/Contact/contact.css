@@ -1,0 +1,113 @@
+.contact {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.footerWrapper {
+  margin-left: 90px;
+  padding-bottom: 47px;
+  margin-top: 30px;
+}
+.formContact {
+  margin-left: 150px;
+  font-size: 16px;
+  color: #bbafaf;
+  margin-top: 100px;
+  font-family: 'Poppins';
+}
+.formContainer {
+  display: flex;
+  font-family: 'Poppins';
+  font-weight: bold;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 10px;
+  margin-right: 50px;
+}
+.formDetails {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  color: #bbafaf;
+  gap: 60px;
+}
+.formDetails input {
+  background: transparent;
+  border: none;
+  border-bottom: 0.15em solid #ccc;
+  color: white;
+  height: 40.4px;
+  width: 180px;
+  padding: 3px;
+  padding-left: 22px;
+  margin-top: 5px;
+}
+.formDetails input:hover {
+  outline: 2.3px solid #ccc;
+  border-bottom: 0.15em solid transparent;
+}
+.formDetails input:focus {
+  outline: 2.3px solid #ccc;
+  border-bottom: 0.15em solid transparent;
+}
+.formButtonContainer {
+  margin-top: -30px;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+.formButtonContainer button {
+  border-radius: 0;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+  transition: background-color 0.3s ease-in-out;
+  width: 150px;
+  height: 42px;
+  cursor: pointer;
+}
+.formButtonContainer button:hover {
+  background-color: white;
+  color: black;
+}
+.detailRow {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.specificDetail {
+  display: flex;
+  flex-direction: column;
+}
+.feedbackRow {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.feedbackRow textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: white;
+  height: 92.9px;
+  width: 401px;
+  padding-top: 10.5px;
+  padding-left: 22px;
+  padding-bottom: 3px;
+  padding-right: 10px;
+}
+.feedbackRow textarea:hover {
+  outline: 2.3px solid #ccc;
+  border-bottom: 0.15em solid transparent;
+}
+.feedbackRow textarea:focus {
+  border-bottom: 0.15em solid transparent;
+  outline: 2.3px solid #ccc;
+}

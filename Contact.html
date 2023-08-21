@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Pages/Contact/contact.css" />
+    <link rel="stylesheet" type="text/css" href="fontStyles.css" />
+    <title>Contact</title>
+  </head>
+  <body class="contact">
+    <div id="header"></div>
+      <div class='formContact'>CONTACT</div>
+      <div class='formContainer'>
+        <div class='formDetails'>
+          <div class='detailRow'>
+            <div class='specificDetail'>
+              First Name
+              <input maxLength={100}></input>
+            </div>
+            <div class='specificDetail'>
+              Last Name
+              <input maxLength={100}></input>
+            </div>
+          </div>
+          <div class='detailRow'>
+            <div class='specificDetail'>
+              Email*
+              <input maxLength={100} required={true} type='email'></input>
+            </div>
+            <div class='specificDetail'>
+              Phone
+              <input maxLength={100}></input>
+            </div>
+          </div>
+          <div class='feedbackRow'>
+            Leave us a message...
+            <textarea ></textarea>
+          </div>
+          <div class='formButtonContainer'>
+            <button>Submit</button>
+          </div>
+        </div>
+      </div>
+    <div class="footerWrapper" id="footer"></div>
+    <script>
+      fetch('./../Pages/Header/Header.html')
+        .then((response) => response.text())
+        .then((content) => {
+          document.getElementById('header').innerHTML = content;
+        })
+        .catch((error) => {
+          console.error('Error loading included content:', error);
+        });
+
+      fetch('./../Pages/Footer/Footer.html')
+        .then((response) => response.text())
+        .then((content) => {
+          document.getElementById('footer').innerHTML = content;
+        })
+        .catch((error) => {
+          console.error('Error loading included content:', error);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.loft {
+  background-image: url('./Images/loftBackground.png');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  overflow-x: hidden;
+  position: relative;
+  background-repeat: no-repeat;
+}
+.loft p {
+  width: 663px;
+  font-family: 'Avenir';
+  letter-spacing: normal;
+  font-size: 11px;
+  background: transparent;
+  vertical-align: baseline;
+  color: #dbdbdb;
+  line-height: 1.8em;
+  text-align: center;
+}
+.textContainer {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loftInsta {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.loftInsta img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+}
+.footerWrapper {
+  margin-left: 95px;
+  margin-bottom: 50px;
+  margin-top: 40px;
+  vertical-align: baseline;
+}
+.headerWrapper {
+  margin-top: -30px;
+}
+.headerWrapper .headerMenu {
+  color: white;
+  font-weight: normal;
+}

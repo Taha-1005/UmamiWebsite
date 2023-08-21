@@ -1,0 +1,25 @@
+.aboutUs {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.aboutUs p {
+  color: white;
+  width: 810px;
+  font-size: 13px;
+}
+.textContainer {
+  margin-top: 100px;
+  margin-left: 60px;
+  font-family: 'Poppins';
+}
+.footerWrapper {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 45px;
+  margin-left: 95px;
+}

@@ -1,0 +1,30 @@
+.tobo {
+  background-image: url('./Images/toboBackground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+.tobo p {
+  width: 750px;
+  text-align: center;
+  font-size: 13px;
+  color: white;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  font-family: 'Poppins';
+}
+.textContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 170px;
+}
+.footerWrapper {
+  margin-bottom: 45px;
+  margin-left: 100px;
+  margin-top: 100px;
+}

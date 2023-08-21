@@ -1,0 +1,49 @@
+.headerContainer {
+  font-family: 'Poppins';
+  color: white;
+  display: flex;
+  width: 100%;
+  padding-top: 90px;
+}
+.headerUmami {
+  margin-left: 135px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.headerUmami img {
+  margin-top: 7px;
+}
+.headerMenuContainer {
+  margin-right: 80px;
+  width: 100%;
+}
+.headerMenu {
+  display: flex;
+  justify-content: right;
+  color: #ffffff;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 0.2em;
+}
+.headerMenu ul {
+  list-style: none;
+  display: flex;
+  gap: 5rem;
+}
+.headerMenu li {
+  cursor: pointer;
+}
+.headerMenu a {
+  text-decoration: none;
+  color: inherit;
+}
+.headerMenu li:hover,
+a:hover {
+  color: #88867f;
+}
+.headerMenu a.active {
+  color: #88867f;
+}
