@@ -1,15 +1,23 @@
+.header {
+  position: static;
+  display: grid;
+  height: auto;
+  width: 100%;
+  min-height: auto;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+}
 .headerContainer {
+  height: 170px;
   font-family: 'Poppins';
   color: white;
   display: flex;
   width: 100%;
-  padding-top: 90px;
 }
 .headerUmami {
   margin-left: 135px;
   text-align: left;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 .headerUmami img {
@@ -18,6 +26,9 @@
 .headerMenuContainer {
   margin-right: 80px;
   width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
 }
 .headerMenu {
   display: flex;

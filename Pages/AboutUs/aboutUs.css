@@ -2,24 +2,33 @@
   background-color: black;
   width: 100vw;
   height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  /* overflow: hidden; */
 }
 .aboutUs p {
   color: white;
-  width: 810px;
+  width: 879.5px;
   font-size: 13px;
+  background: transparent;
+  vertical-align: baseline;
+}
+.cont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  height: 578px;
 }
 .textContainer {
-  margin-top: 100px;
-  margin-left: 60px;
+  position: relative;
+  margin: 103px 0px 10px calc((100% - 980px) * 0.5);
   font-family: 'Poppins';
+  left: -204px;
 }
 .footerWrapper {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 45px;
-  margin-left: 95px;
+  width: 768px;
+}
+.footerIn {
+  margin: 32px 0px 46px calc((100% - 490px) * 0.5);
+  left: -44px;
+  position: relative;
+  width: 469px;
 }
