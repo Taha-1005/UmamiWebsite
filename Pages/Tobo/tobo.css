@@ -3,9 +3,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
+  height: fit-content;
   position: relative;
+  margin: 0;
 }
 .tobo p {
   width: 750px;

@@ -9,20 +9,32 @@
   </head>
   <body class="brands">
     <div id="header"></div>
-    <div class="brandsRow">
-      <div class="brandsCol1">
-        <a href="/Loft.html">
-          <img src="./Pages/Brands/Images/loftImage.png" />
-        </a>
-      </div>
-      <div class="brandsCol2">DINE IN // MODERN FAST FOOD</div>
-      <div class="brandsCol3">
-        <a href="Tobo.html">
-          <img src="./Pages/Brands/Images/toboImage.png" />
-        </a>
+    <div class="brandsGrid">
+      <div class="brandsRow">
+        <div class="brandsCol1">
+          <a href="/Loft.html">
+            <img src="./Pages/Brands/Images/loftImage.png" />
+          </a>
+          <a href="/Loft.html">
+            <p>DISCOVER LOFT</p>
+          </a>
+        </div>
+        <div class="brandsCol2"><p>DINE IN // MODERN FAST FOOD</p></div>
+        <div class="brandsCol3">
+          <a href="Tobo.html">
+            <img src="./Pages/Brands/Images/toboImage.png" />
+          </a>
+          <a href="Tobo.html"> <p>DISCOVER TOBO</p></a>
+        </div>
       </div>
     </div>
-    <div class="footerWrapper" id="footer"></div>
+    <div id="footer"></div>
+
+    <!-- <div class="footerWrapper">
+      <div class="footerHalf">
+      </div>
+      <div class="footerHalf"></div>
+    </div> -->
     <script>
       fetch('./../Pages/Header/Header.html')
         .then((response) => response.text())

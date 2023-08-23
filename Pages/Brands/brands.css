@@ -3,41 +3,97 @@
   width: 100vw;
   height: 100vh;
   background-size: contain;
-  /* position: relative; */
-  overflow: hidden;
+  margin: 0;
 }
 .brandsRow {
-  display: flex;
-  flex-direction: row;
-  gap: 450px;
+  position: static;
+  display: grid;
+  height: auto;
   width: 100%;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
+  min-height: 498px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
 }
 .brandsRow a {
+  text-decoration: none;
   color: white;
 }
 .brandsRow a:hover {
   color: white;
 }
+.brandsCol1 {
+  position: relative;
+  margin: 240px 0px 10px calc((100% - 800px) * 0.5);
+  left: -204px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+}
 .brandsCol1 img {
   width: 134px;
   height: 62px;
+  position: absolute;
+  transition: opacity 0.3s;
+  left: 20px;
+}
+.brandsCol1 p {
+  color: white;
+  font-family: 'Poppins';
+  letter-spacing: 0.4em;
+  font-weight: bolder;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.brandsCol1:hover img {
+  opacity: 0;
+}
+.brandsCol1:hover p {
+  opacity: 1;
 }
 .brandsCol2 {
   color: white;
   font-family: 'Avenir';
   font-size: 14px;
+  position: relative;
+  margin: 242px 0px 10px calc((100% - 980px) * 0.5);
+  left: 79px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+  align-items: flex-end;
+  padding-top: 10px;
 }
-.footerWrapper {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 50px;
-  margin-left: 100px;
+.brandsCol2 p {
+  width: 821px;
+  margin-bottom: 0;
+  text-align: center;
+}
+.brandsCol3 {
+  position: relative;
+  margin: 242px 0px 10px calc((100% - 1400px) * 0.5);
+  left: 1063px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
 }
 .brandsCol3 img {
   width: 134px;
   height: 62px;
+  position: absolute;
+  transition: opacity 0.3s;
+  left: 20px;
+}
+.brandsCol3 p {
+  color: white;
+  font-family: 'Poppins';
+  letter-spacing: 0.4em;
+  font-weight: bolder;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.brandsCol3:hover img {
+  opacity: 0;
+}
+.brandsCol3:hover p {
+  opacity: 1;
 }

@@ -2,16 +2,17 @@
   background-color: black;
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
+  margin: 0;
 }
 .aboutUs p {
   color: white;
-  width: 879.5px;
+  width: 884px;
   font-size: 13px;
   background: transparent;
   vertical-align: baseline;
+  margin-top: 0;
 }
-.cont {
+.aboutUsGrid {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -22,13 +23,4 @@
   margin: 103px 0px 10px calc((100% - 980px) * 0.5);
   font-family: 'Poppins';
   left: -204px;
-}
-.footerWrapper {
-  width: 768px;
-}
-.footerIn {
-  margin: 32px 0px 46px calc((100% - 490px) * 0.5);
-  left: -44px;
-  position: relative;
-  width: 469px;
 }

@@ -1,11 +1,11 @@
 .loft {
   background-image: url('./Images/loftBackground.png');
   width: 100vw;
-  height: 100vh;
+  height: fit-content;
   background-size: cover;
-  overflow-x: hidden;
   position: relative;
   background-repeat: no-repeat;
+  margin: 0;
 }
 .loft p {
   width: 663px;

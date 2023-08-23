@@ -1,9 +1,9 @@
 .header {
   position: static;
   display: grid;
-  height: auto;
+  min-height: 229px;
   width: 100%;
-  min-height: auto;
+  /* min-height: auto; */
   grid-template-rows: 1fr;
   grid-template-columns: 100%;
 }
