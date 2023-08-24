@@ -7,36 +7,64 @@
   flex-direction: column;
   margin: 0;
 }
-.formContact {
-  margin-left: 150px;
-  font-size: 16px;
-  color: #bbafaf;
-  margin-top: 100px;
+.formContactContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
   font-family: 'Poppins';
+  height: fit-content;
+}
+.formContactContainerHalf {
+  color: white;
+  position: static;
+  display: grid;
+  height: auto;
+  width: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 100%;
+}
+.formContactContainerHalf p {
+  position: relative;
+  margin: 75px 0px 10px calc((100% - 490px) * 0.5);
+  left: 18px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
+  width: 469px;
+}
+.formContainerGrid {
+  position: relative;
+  margin: 59px 0px 43px calc((100% - 980px) * 0.5);
+  left: 204px;
+  grid-area: 1 / 1 / 2 / 2;
+  justify-self: start;
+  align-self: start;
 }
 .formContainer {
   display: flex;
   font-family: 'Poppins';
-  font-weight: bold;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 15px;
   font-weight: 10px;
   margin-right: 50px;
+  margin-bottom: 50px;
 }
 .formDetails {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   width: fit-content;
-  color: #bbafaf;
+  color: white;
   gap: 60px;
 }
 .formDetails input {
   background: transparent;
   border: none;
-  border-bottom: 0.15em solid #ccc;
+  border-bottom: 0.15em solid white;
   color: white;
   height: 40.4px;
   width: 180px;
@@ -45,11 +73,11 @@
   margin-top: 5px;
 }
 .formDetails input:hover {
-  outline: 2.3px solid #ccc;
+  outline: 2.3px solid white;
   border-bottom: 0.15em solid transparent;
 }
 .formDetails input:focus {
-  outline: 2.3px solid #ccc;
+  outline: 2.3px solid white;
   border-bottom: 0.15em solid transparent;
 }
 .formButtonContainer {
@@ -89,7 +117,7 @@
 .feedbackRow textarea {
   background: transparent;
   border: none;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid white;
   color: white;
   height: 92.9px;
   width: 401px;
@@ -99,10 +127,10 @@
   padding-right: 10px;
 }
 .feedbackRow textarea:hover {
-  outline: 2.3px solid #ccc;
+  outline: 2.3px solid white;
   border-bottom: 0.15em solid transparent;
 }
 .feedbackRow textarea:focus {
   border-bottom: 0.15em solid transparent;
-  outline: 2.3px solid #ccc;
+  outline: 2.3px solid white;
 }

@@ -5,74 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./Pages/Career/career.css" />
     <link rel="stylesheet" type="text/css" href="fontStyles.css" />
-    <!-- Add these lines to your HTML file -->
     <title>Career</title>
   </head>
-  <body class="career">
-    <div id="header" class="headerWrapper"></div>
-    <div class="careerForm">
-      <div class="careerFormText">CAREER</div>
-      <div class="careerFormRow">
-        <div class="careerFormRowInfo">
-          <input
-            name="TxtName"
-            id="TxtName"
-            required="required"
-            type="text"
-            placeholder="Name"
-          />
+  <body class="contact">
+    <div id="header"></div>
+    <div class="formContactContainer">
+      <div class="formContactContainerHalf"><p>CAREER</p></div>
+      <div class="formContactContainerHalf"></div>
+    </div>
+    <div class="formContainer">
+      <div class="formDetails">
+        <div class="detailRow">
+          <div class="specificDetail">
+            First Name
+            <input maxlength="{100}" />
+          </div>
+          <div class="specificDetail">
+            Qualification
+            <input maxlength="{100}" />
+          </div>
         </div>
-        <div class="careerFormRowInfo">
-          <input
-            name="Textqualification"
-            id="Textqualification"
-            required="required"
-            type="text"
-            placeholder="Qualification"
-          />
+        <div class="detailRow">
+          <div class="specificDetail">
+            Email*
+            <input maxlength="{100}" required="{true}" type="email" />
+          </div>
+          <div class="specificDetail">
+            Phone
+            <input maxlength="{100}" />
+          </div>
         </div>
-      </div>
-      <hr />
-      <div class="careerFormRow">
-        <div class="careerFormRowInfo">
-          <input
-            name="TxtEmail"
-            id="TxtEmail"
-            required="required"
-            type="email"
-            placeholder="Email"
-          />
+        <div class="resumeRow">
+          <span id="SpanFileUpload">
+            <i aria-hidden="true">
+              <img src="./Pages/Career/Images/upload_umami.png"
+            /></i>
+            <label id="lblAttachResume">Attach Your Resume</label>
+          </span>
+          <input type="file" name="FileUploadResume" id="FileUploadResume" />
         </div>
-        <div class="careerFormRowInfo">
-          <input
-            name="TxtPhoneNo"
-            id="TxtPhoneNo"
-            type="tel"
-            placeholder="Phone"
-          />
+        <div class="formButtonContainer">
+          <button>Submit</button>
         </div>
-      </div>
-      <hr />
-      <div class="careerFormRowResume">
-        <span id="SpanFileUpload">
-          <i aria-hidden="true">
-            <img src="./Pages/Career/Images/upload_umami.png"
-          /></i>
-          <label id="lblAttachResume">Attach Your Resume</label>
-        </span>
-        <input type="file" name="FileUploadResume" id="FileUploadResume" />
-      </div>
-      <hr />
-      <div class="careerFormSubmit">
-        <input
-          type="submit"
-          name="Btncareer"
-          id="Btncareer"
-          value='Submit Resume'
-        />
       </div>
     </div>
-    <div class="footerWrapper" id="footer"></div>
+    <div id="footer"></div>
     <script>
       fetch('./../Pages/Header/Header.html')
         .then((response) => response.text())

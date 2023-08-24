@@ -9,38 +9,41 @@
   </head>
   <body class="contact">
     <div id="header"></div>
-      <div class='formContact'>CONTACT</div>
-      <div class='formContainer'>
-        <div class='formDetails'>
-          <div class='detailRow'>
-            <div class='specificDetail'>
-              First Name
-              <input maxLength={100}></input>
-            </div>
-            <div class='specificDetail'>
-              Last Name
-              <input maxLength={100}></input>
-            </div>
+    <div class="formContactContainer">
+      <div class="formContactContainerHalf"><p>CONTACT</p></div>
+      <div class="formContactContainerHalf"></div>
+    </div>
+    <div class="formContainer">
+      <div class="formDetails">
+        <div class="detailRow">
+          <div class="specificDetail">
+            First Name
+            <input maxlength="{100}" />
           </div>
-          <div class='detailRow'>
-            <div class='specificDetail'>
-              Email*
-              <input maxLength={100} required={true} type='email'></input>
-            </div>
-            <div class='specificDetail'>
-              Phone
-              <input maxLength={100}></input>
-            </div>
-          </div>
-          <div class='feedbackRow'>
-            Leave us a message...
-            <textarea ></textarea>
-          </div>
-          <div class='formButtonContainer'>
-            <button>Submit</button>
+          <div class="specificDetail">
+            Last Name
+            <input maxlength="{100}" />
           </div>
         </div>
+        <div class="detailRow">
+          <div class="specificDetail">
+            Email*
+            <input maxlength="{100}" required="{true}" type="email" />
+          </div>
+          <div class="specificDetail">
+            Phone
+            <input maxlength="{100}" />
+          </div>
+        </div>
+        <div class="feedbackRow">
+          Leave us a message...
+          <textarea></textarea>
+        </div>
+        <div class="formButtonContainer">
+          <button>Submit</button>
+        </div>
       </div>
+    </div>
     <div id="footer"></div>
     <script>
       fetch('./../Pages/Header/Header.html')
