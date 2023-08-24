@@ -3,44 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./Pages/Tobo/tobo.css" />
+    <link rel="stylesheet" href="./Pages/Career/career.css" />
     <link rel="stylesheet" type="text/css" href="fontStyles.css" />
+    <!-- Add these lines to your HTML file -->
     <title>Career</title>
   </head>
-  <body class="tobo">
+  <body class="career">
     <div id="header" class="headerWrapper"></div>
-    <div class="textContainer">
-      <p>
-        TOBO TAKES GREAT PRIDE IN BEING THE ONLY BURGER JOINT IN THE WORLD TO
-        OFFER A ONE-OF-A-KIND RECIPE. THIS EXCLUSIVE RECIPE FEATURES A BLEND OF
-        PREMIUM INGREDIENTS, BOLD FLAVORS, AND A DICE OF LOVE TO CREATE BURGERS
-        THAT ARE TRULY ONE OF A KIND.
-      </p>
-      <p>
-        TOBO HAS CAPTURED THE HEARTS OF FOODIES EVERYWHERE, IS MORE THAN JUST A
-        PLACE TO GRAB A QUICK BITE. IT'S A VERITABLE FEAST FOR THE SENSES, A
-        SENSORY SYMPHONY OF SIGHTS, SMELLS, AND TASTES THAT TANTALIZE AND TEMPT.
-      </p>
-      <p>
-        AS YOU APPROACH TOBO, THE MOUTHWATERING AROMA OF SIZZLING BURGERS WAFTS
-        THROUGH THE AIR, DRAWING YOU CLOSER WITH EVERY STEP. THE SOUNDS OF
-        SIZZLING MEAT AND BUBBLING CHEESE MINGLE WITH THE CHATTER OF HUNGRY
-        PATRONS, CREATING A LIVELY AMBIANCE THAT'S BOTH INVITING AND EXCITING.
-      </p>
-      <p>
-        THE MODERN INDUSTRIAL DESIGN THEME AT TOBO IS CHARACTERIZED BY ITS USE
-        OF RAW MATERIALS SUCH AS CONCRETE, METAL, AND WOOD, AND FEATURES SLEEK
-        AND CLEAN LINES THAT CREATE A SOPHISTICATED AND STYLISH ATMOSPHERE. THE
-        OPEN KITCHEN AND ILLUMINATED MENU BOARDS ADD TO THE OVERALL AESTHETIC
-        AND ALLOW DINERS TO WATCH AS THEIR BURGERS ARE MADE TO ORDER.
-      </p>
-      <p>
-        WHETHER YOU'RE GRABBING A QUICK BITE OR SETTLING IN FOR A LEISURELY
-        MEAL, TOBO IS THE PERFECT DESTINATION FOR ANYONE LOOKING FOR A UNIQUE
-        AND MEMORABLE DINING EXPERIENCE. WITH ITS ONE-OF-A-KIND RECIPE AND
-        MODERN INDUSTRIAL DESIGN, TOBO IS A BURGER JOINT THAT TRULY STANDS OUT
-        FROM THE REST.
-      </p>
+    <div class="careerForm">
+      <div class="careerFormText">CAREER</div>
+      <div class="careerFormRow">
+        <div class="careerFormRowInfo">
+          <input
+            name="TxtName"
+            id="TxtName"
+            required="required"
+            type="text"
+            placeholder="Name"
+          />
+        </div>
+        <div class="careerFormRowInfo">
+          <input
+            name="Textqualification"
+            id="Textqualification"
+            required="required"
+            type="text"
+            placeholder="Qualification"
+          />
+        </div>
+      </div>
+      <hr />
+      <div class="careerFormRow">
+        <div class="careerFormRowInfo">
+          <input
+            name="TxtEmail"
+            id="TxtEmail"
+            required="required"
+            type="email"
+            placeholder="Email"
+          />
+        </div>
+        <div class="careerFormRowInfo">
+          <input
+            name="TxtPhoneNo"
+            id="TxtPhoneNo"
+            type="tel"
+            placeholder="Phone"
+          />
+        </div>
+      </div>
+      <hr />
+      <div class="careerFormRowResume">
+        <span id="SpanFileUpload">
+          <i aria-hidden="true">
+            <img src="./Pages/Career/Images/upload_umami.png"
+          /></i>
+          <label id="lblAttachResume">Attach Your Resume</label>
+        </span>
+        <input type="file" name="FileUploadResume" id="FileUploadResume" />
+      </div>
+      <hr />
+      <div class="careerFormSubmit">
+        <input
+          type="submit"
+          name="Btncareer"
+          id="Btncareer"
+          value='Submit Resume'
+        />
+      </div>
     </div>
     <div class="footerWrapper" id="footer"></div>
     <script>
