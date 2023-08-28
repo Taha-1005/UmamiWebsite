@@ -28,27 +28,15 @@
         </div>
       </div>
     </div>
-    <div id="footer"></div>
-
-    <!-- <div class="footerWrapper">
-      <div class="footerHalf">
-      </div>
+    <div class="footer">
+      © 2023 ALL COPYWRITES ARE RESERVED TO UMAMICO
       <div class="footerHalf"></div>
-    </div> -->
+    </div>
     <script>
       fetch('./../Pages/Header/Header.html')
         .then((response) => response.text())
         .then((content) => {
           document.getElementById('header').innerHTML = content;
-        })
-        .catch((error) => {
-          console.error('Error loading included content:', error);
-        });
-
-      fetch('./../Pages/Footer/Footer.html')
-        .then((response) => response.text())
-        .then((content) => {
-          document.getElementById('footer').innerHTML = content;
         })
         .catch((error) => {
           console.error('Error loading included content:', error);

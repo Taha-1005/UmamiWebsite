@@ -12,30 +12,22 @@
 }
 .textInstaContainer {
   display: flex;
+  align-items: center;
+  width: 100%;
   flex-direction: column;
-  height: 75%;
-}
-.textContainer {
-  overflow: scroll;
-  padding-right: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  height: 100%;
 }
 .textContainer p {
   width: 663px;
-  font-family: 'Avenir';
+  font-family: 'Poppins';
   letter-spacing: normal;
   font-size: 13px;
   background: transparent;
-  vertical-align: baseline;
   color: #dbdbdb;
   line-height: 1.8em;
   text-align: center;
 }
 .loftInstaTik {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -52,24 +44,11 @@
   margin-bottom: -5px;
 }
 .footer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  margin: 0 auto;
-  position: relative;
-  margin-top: 2%;
-}
-.footerHalf {
-  width: 100%;
-  display: grid;
-}
-.footerIn {
-  position: relative;
-  margin: 32px 0px 0px calc((100% - 490px) * 0.5);
-  left: -44px;
-  width: 469px;
-  color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
   font-size: 10px;
   font-family: 'Avenir';
   letter-spacing: normal;
+  color: white;
 }

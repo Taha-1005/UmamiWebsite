@@ -3,7 +3,11 @@
   width: 100vw;
   height: 100vh;
   background-size: contain;
+  position: fixed;
   margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
 }
 .brandsRow {
   position: static;
@@ -96,4 +100,13 @@
 }
 .brandsCol3:hover p {
   opacity: 1;
+}
+.footer {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 10px;
+  font-family: 'Avenir';
+  letter-spacing: normal;
+  color: white;
 }
