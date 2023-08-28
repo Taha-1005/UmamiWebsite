@@ -1,13 +1,12 @@
 .tobo {
   background-image: url('./Images/toboBackground.png');
   width: 100vw;
-  height: fit-content;
-  position: relative;
+  height: 100vh;
+  position: fixed;
   margin: 0;
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
   border: 0;
   outline: 0;
 }
@@ -15,27 +14,61 @@
   width: 690px;
   text-align: center;
   font-size: 13px;
-  color: white;
+  color: #dbdbdb;
   font-family: 'Poppins';
   text-justify: inter-word;
   overflow-wrap: break-word;
   line-height: 1.8em;
 }
-.textContainer {
-  position: static;
-  display: grid;
-  height: auto;
-  width: 100%;
-  min-height: auto;
-  grid-template-rows: 1fr;
-  grid-template-columns: 100%;
-  height: 596px;
+.textInstaContainer {
+  display: flex;
+  flex-direction: column;
+  height: 75%;
 }
-.textContainer div {
+.textContainer {
+  overflow: scroll;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.toboInstaTik {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.insta {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  vertical-align: baseline;
+}
+.tiktok {
+  width: 15px;
+  height: 15px;
+  margin-bottom: -5px;
+}
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
   position: relative;
-  margin: 122px 0px 61px calc((100% - 980px) * 0.5);
-  left: 158px;
-  grid-area: 1 / 1 / 2 / 2;
-  justify-self: start;
-  align-self: start;
+  margin-top: 2%;
+}
+.footerHalf {
+  width: 100%;
+  display: grid;
+}
+.footerIn {
+  position: relative;
+  margin: 32px 0px 0px calc((100% - 490px) * 0.5);
+  left: -44px;
+  width: 469px;
+  color: white;
+  font-size: 10px;
+  font-family: 'Avenir';
+  letter-spacing: normal;
 }

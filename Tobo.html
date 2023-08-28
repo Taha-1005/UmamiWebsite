@@ -9,8 +9,8 @@
   </head>
   <body class="tobo">
     <div id="header" class="headerWrapper"></div>
-    <div class="textContainer">
-      <div>
+    <div class="textInstaContainer">
+      <div class="textContainer">
         <p>
           Tobo takes great pride in being the only burger joint in the world to
           offer a one-of-a-kind recipe. This exclusive recipe features a blend
@@ -45,22 +45,29 @@
           from the rest.
         </p>
       </div>
+      <div class="toboInstaTik">
+        <a href="/">
+          <img class='insta'src="./Pages/Loft/Images/insta_umami.png" />
+        </a>
+        <a href="/">
+          <img class="tiktok" src="./Pages/Loft/Images/tik_umami.png" />
+        </a>
+      </div>
+      <div class="footer">
+        <div class="footerHalf">
+          <div class="footerIn">
+            © 2023 ALL COPYWRITES ARE RESERVED TO UMAMICO
+          </div>
+        </div>
+        <div class="footerHalf"></div>
+      </div>
     </div>
-    <div class="footerWrapper" id="footer"></div>
+
     <script>
       fetch('./../Pages/Header/Header.html')
         .then((response) => response.text())
         .then((content) => {
           document.getElementById('header').innerHTML = content;
-        })
-        .catch((error) => {
-          console.error('Error loading included content:', error);
-        });
-
-      fetch('./../Pages/Footer/Footer.html')
-        .then((response) => response.text())
-        .then((content) => {
-          document.getElementById('footer').innerHTML = content;
         })
         .catch((error) => {
           console.error('Error loading included content:', error);

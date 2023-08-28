@@ -43,28 +43,29 @@
           establishing a proud and distinguish brand identity.
         </p>
       </div>
-      <div class="loftInsta">
+      <div class="loftInstaTik">
         <a href="/">
-          <img src="./Pages/Loft/Images/insta_umami.png" />
+          <img class="insta" src="./Pages/Loft/Images/insta_umami.png" />
         </a>
+        <a href="/">
+          <img class="tiktok" src="./Pages/Loft/Images/tik_umami.png" />
+        </a>
+      </div>
+      <div class="footer">
+        <div class="footerHalf">
+          <div class="footerIn">
+            © 2023 ALL COPYWRITES ARE RESERVED TO UMAMICO
+          </div>
+        </div>
+        <div class="footerHalf"></div>
       </div>
     </div>
 
-    <div class="footerWrapper" id="footer"></div>
     <script>
       fetch('./../Pages/Header/Header.html')
         .then((response) => response.text())
         .then((content) => {
           document.getElementById('header').innerHTML = content;
-        })
-        .catch((error) => {
-          console.error('Error loading included content:', error);
-        });
-
-      fetch('./../Pages/Footer/Footer.html')
-        .then((response) => response.text())
-        .then((content) => {
-          document.getElementById('footer').innerHTML = content;
         })
         .catch((error) => {
           console.error('Error loading included content:', error);
