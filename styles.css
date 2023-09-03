@@ -42,11 +42,12 @@
   letter-spacing: 0.6em;
 }
 .linkedIn {
-  width: 100%;
-  margin-bottom: -40px;
+  display: flex;
+  justify-content: center;
+}
+.linkedIn a {
+  display: flex;
 }
 .linkedIn img {
   height: 30px;
-  margin-right: 50%;
-  margin-left: 50%;
 }
