@@ -1,3 +1,7 @@
+.homeBody {
+  margin: 0;
+  padding: 0;
+}
 .homePage {
   margin: 0;
   padding: 0;
@@ -50,4 +54,33 @@
 }
 .linkedIn img {
   height: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobHomePage {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .homePage {
+    display: none;
+  }
+  .mobHomePage {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-image: url('./mobile_homePage.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+  }
+  .mobTextDiv {
+    text-align: center;
+  }
+  .mobText{
+    margin: 0;
+    color: white;
+  }
 }

@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <title>Header Mobile</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Pages/Header/headerMobile.css"
+    />
+  </head>
+  <body class="headerMobile">
+    <div
+      class="menuToggle"
+      id="mobileMenu"
+      onclick="(function(){
+        const navBar = document.getElementById('navPar');
+        console.log(navBar.hidden);
+        if(navBar.hidden === true){
+          navBar.setAttribute('style', 'display: none');
+          navBar.hidden = false;
+        }
+        else {
+          navBar.setAttribute('style', 'display: flex');
+          navBar.hidden = true;
+        }
+        console.log(navBar.hidden);
+      })();"
+    >
+      <p class="bar"></p>
+      <p class="bar"></p>
+      <p class="bar"></p>
+    </div>
+    <nav class="navbar" id="navPar">
+      <ul class="navList">
+        <li class="navItem">
+          <a href="/Brands.html" class="navLink">BRANDS</a>
+        </li>
+        <li class="navItem">
+          <a href="/AboutUs.html" class="navLink">ABOUT US</a>
+        </li>
+        <li class="navItem">
+          <a href="/Contact.html" class="navLink">CONTACT</a>
+        </li>
+        <li class="navItem">
+          <a href="/Career.html" class="navLink">CAREER</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="headerUmami">
+      <a href="/">
+        <img src="./Pages/Header/Images/umamiImage.png" />
+      </a>
+    </div>
+  </body>
+</html>

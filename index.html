@@ -2,29 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="fontStyles.css" />
     <title>Umami</title>
   </head>
-  <body class="homePage">
-    <div id="header"></div>
-    <div class="homePageTextContainer">
-      <div class="homePageTextContainerHalf">
-        <div class="homePageText"><p>YOUR FIFTH SENSE OF TASTE</p></div>
+  <body class="homeBody">
+    <div class="homePage">
+      <div id="header"></div>
+      <div class="homePageTextContainer">
+        <div class="homePageTextContainerHalf">
+          <div class="homePageText"><p>YOUR FIFTH SENSE OF TASTE</p></div>
+        </div>
+        <div class="homePageTextContainerHalf"></div>
       </div>
-      <div class="homePageTextContainerHalf"></div>
+      <div class="linkedIn">
+        <a
+          href="https://www.linkedin.com/company/umami-company/mycompany/"
+          target="_blank"
+        >
+          <img src="./linkedIn.png"
+        /></a>
+      </div>
+      <div class="footerWrapper" id="footer"></div>
     </div>
-    <div class="linkedIn">
-      <a
-        
-        href="https://www.linkedin.com/company/umami-company/mycompany/"
-        target="_blank"
-      >
-        <img src="./linkedIn.png"
-      /></a>
+    <div class="mobHomePage">
+      <div id="headerMobile"></div>
+      <div class="mobTextDiv">
+        <p class="mobText">YOUR FIFTH SENSE OF TASTE</p>
+      </div>
     </div>
-    <div class="footerWrapper" id="footer"></div>
     <script>
       fetch('./../Pages/Header/Header.html')
         .then((response) => response.text())
@@ -39,6 +49,15 @@
         .then((response) => response.text())
         .then((content) => {
           document.getElementById('footer').innerHTML = content;
+        })
+        .catch((error) => {
+          console.error('Error loading included content:', error);
+        });
+
+      fetch('./../Pages/Header/HeaderMobile.html')
+        .then((response) => response.text())
+        .then((content) => {
+          document.getElementById('headerMobile').innerHTML = content;
         })
         .catch((error) => {
           console.error('Error loading included content:', error);
